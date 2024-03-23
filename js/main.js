@@ -15,8 +15,17 @@
         $html.classList.remove("light-mode");
     })
 
-    // Scrollspy
+// Fechar a barra de navegação quando clicada
+    window.addEventListener('click', (event) => {
+        const target = event.target.parentNode.parentNode.parentNode;
+        const closeNav = document.querySelector('#close-nav');
 
+        if(target.className === "header-nav"){
+            closeNav.checked = true;
+        }        
+    });
+
+    // Scrollspy
     window.addEventListener("scroll", () => {   //Serve pra quando eu descer a tela, a nav ficar da cor da atual seção que estou
         var windo = window.scrollY + 350;
         if (sobre.offsetTop <= windo && tecnologias.offsetTop > windo) {   // Pra afetar o nav Dishes, uso "dishes" e o nome da próxima nav que no caso aqui é o "about"
