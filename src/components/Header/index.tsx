@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { MyContext } from '../../hooks/context';
+import { useLocation } from 'react-router-dom';
 
 export function Header() {
   const context = useContext(MyContext);
@@ -10,6 +11,7 @@ export function Header() {
 
   const { darkMode, setDarkMode } = context;
   const [showNavBar, setShowNavBar] = useState(false);
+  const location = useLocation().pathname;
 
   // Será executado toda vez que a página for carregada e quando a variável darkMode sofrer alguma alteração
   useEffect(() => {
@@ -24,11 +26,23 @@ export function Header() {
   }, [darkMode]);
 
   const links = [
-    { id: '1', href: '#inicio', text: 'Inicio' },
-    { id: '2', href: '#sobre', text: 'Sobre' },
-    { id: '3', href: '#tecnologias', text: 'Tecnologias' },
-    { id: '4', href: '#projetos', text: 'Projetos' },
-    { id: '5', href: '#mensagem', text: 'Mensagem' },
+    { id: '1', href: `${location === '/' ? '#inicio' : '/'}`, text: 'Inicio' },
+    { id: '2', href: `${location === '/' ? '#sobre' : '/'}`, text: 'Sobre' },
+    {
+      id: '3',
+      href: `${location === '/' ? '#tecnologias' : '/'}`,
+      text: 'Tecnologias',
+    },
+    {
+      id: '4',
+      href: `${location === '/' ? '#projetos' : '/'}`,
+      text: 'Projetos',
+    },
+    {
+      id: '5',
+      href: `${location === '/' ? '#mensagem' : '/'}`,
+      text: 'Mensagem',
+    },
   ];
 
   return (

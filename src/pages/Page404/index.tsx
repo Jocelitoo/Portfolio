@@ -34,7 +34,7 @@ export function Page404() {
     <section
       className={`${darkMode ? 'bg-dark text-white' : 'bg-light text-black'} mt-16 flex flex-col gap-4 justify-center items-center flex-grow`}
     >
-      <h1 className="font-bold text-5xl">Essa página não existe</h1>
+      <h1 className="font-bold text-5xl text-center">Essa página não existe</h1>
       <p>Redirecionado para Home em: {timer}</p>
     </section>
   );
