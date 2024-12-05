@@ -352,10 +352,10 @@ export function Tecnologias() {
             web baseados em React.
           </p>
 
-          <div className="absolute left-0 right-0 top-0 bottom-0 bg-black opacity-75 flex justify-center items-center">
+          {/* <div className="absolute left-0 right-0 top-0 bottom-0 bg-black opacity-75 flex justify-center items-center">
             <div className="absolute w-24 h-24 rounded-full before:absolute before:w-full before:h-full before:rounded-full before:shadow-[0_0_5px_0_rgba(255,255,255,0.5)] animate-ring"></div>
             <p className="text-white font-bold">Estudando</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
