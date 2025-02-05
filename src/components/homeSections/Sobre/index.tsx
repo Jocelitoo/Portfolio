@@ -38,7 +38,7 @@ export function Sobre() {
         <p className="brightness-75">Fortaleza, Ceará.</p>
 
         <p className="brightness-75">
-          Olá, me chamo Jocelito Climeres. Sou um jovem de 21 anos que em Julho
+          Olá, me chamo Jocelito Climeres. Sou um jovem de 22 anos que em Julho
           de 2022 conheceu o mundo da programação e se apaixonou, desde então
           estudo diariamente para desenvolver cada vez mais minhas habilidades e
           conseguir ingressar no mercado de trabalho como um Desenvolvedor

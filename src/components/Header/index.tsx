@@ -52,13 +52,14 @@ export function Header() {
       <p className="font-bold text-2xl">JC</p>
 
       <nav
-        className={`${showNavBar ? 'block' : 'hidden'} absolute top-full left-0 right-0 ${darkMode ? 'bg-dark2 ' : 'bg-light2'} lg:!block lg:relative`}
+        className={`absolute top-full left-0 right-0 origin-top transition-transform  duration-300 ${showNavBar ? 'scale-y-100' : 'scale-y-0'} ${darkMode ? 'bg-dark2 ' : 'bg-light2'} lg:!block lg:relative lg:scale-100`}
       >
         <ul className="flex flex-col lg:flex-row lg:gap-4">
           {links.map((link) => {
             return (
               <li
                 key={link.id}
+                onClick={() => setShowNavBar(false)}
                 className="text-center border-b border-black last:border-none lg:border-none"
               >
                 <a
