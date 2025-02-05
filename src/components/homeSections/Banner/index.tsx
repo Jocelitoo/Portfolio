@@ -43,7 +43,7 @@ export function Banner() {
             href={'https://github.com/Jocelitoo'}
             target="_blank"
             aria-labelledby="Github"
-            className={`${buttonCSS(darkMode)} w-fit flex items-center gap-2`}
+            className={`${buttonCSS(darkMode)} !w-fit flex items-center gap-2`}
           >
             <svg
               stroke="currentColor"
@@ -64,7 +64,7 @@ export function Banner() {
             href={'https://www.linkedin.com/in/jocelito-climeres-a19014247/'}
             target="_blank"
             aria-labelledby="Linkedin"
-            className={`${buttonCSS(darkMode)} w-fit  flex items-center gap-2`}
+            className={`${buttonCSS(darkMode)} !w-fit  flex items-center gap-2`}
           >
             <svg
               stroke="currentColor"
