@@ -47,6 +47,7 @@ export function Sobre() {
           <a
             href="https://www.unifor.br/"
             target="_blank"
+            rel="noopener noreferrer"
             aria-labelledby="Unifor"
             className={`${darkMode ? 'text-mainColorDark' : 'text-mainColorLight'}`}
           >

@@ -47,7 +47,7 @@ export function Header() {
 
   return (
     <header
-      className={`flex justify-between items-center p-section py-2 ${darkMode ? 'bg-dark2 text-white ' : 'bg-light2 text-black'} fixed top-0 left-0 right-0 z-10`}
+      className={`flex justify-between items-center p-section py-2 ${darkMode ? 'bg-dark2 text-white ' : 'bg-light2 text-black'} sticky top-0 left-0 right-0 z-10`}
     >
       <p className="font-bold text-2xl">JC</p>
 

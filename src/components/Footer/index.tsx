@@ -21,6 +21,7 @@ export function Footer() {
         <a
           href={'https://github.com/Jocelitoo'}
           target="_blank"
+          rel="noopener noreferrer"
           aria-labelledby="Github"
           className={`flex items-center gap-2 ${buttonCSS(darkMode)}`}
         >
@@ -42,6 +43,7 @@ export function Footer() {
         <a
           href={'https://www.linkedin.com/in/jocelito-climeres-a19014247/'}
           target="_blank"
+          rel="noopener noreferrer"
           aria-labelledby="Linkedin"
           className={`flex items-center gap-2 ${buttonCSS(darkMode)}`}
         >
